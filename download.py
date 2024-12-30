@@ -57,9 +57,10 @@ for t in range(nt):
                'grid'           : [DX,DY]                     ,
                'data_format'    : 'grib'                      ,
               }
+
     if (not os.path.isfile(absolute_path)):
         LOG_POINTER.write('Data Download to {}\n'.format(absolute_path))
-        #client.retrieve(DATASET, request, absolute_path)
+        client.retrieve(DATASET, request, absolute_path)
     else:
         LOG_POINTER.write('{} already exist\n'.format(absolute_path))
 

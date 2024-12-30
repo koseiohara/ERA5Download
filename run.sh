@@ -11,7 +11,7 @@ fi
 
 for PARAM in ${PARAMS_LIST}
 do
-    echo "python ${SCRIPT} ${YEAR}/01/01/00 ${YEAR}/12/31/18 ${PARAM} &> log/log.txt &"
-    python ${SCRIPT} ${YEAR}/01/01/00 ${YEAR}/12/31/18 ${PARAM} &> log/log.txt &
+    echo "python ${SCRIPT} ${YEAR}/01/01/00 ${YEAR}/12/31/18 ${PARAM} &>> log/log.txt &"
+    python ${SCRIPT} ${YEAR}/01/01/00 ${YEAR}/12/31/18 ${PARAM} &>> log/log.txt &
 done
 
