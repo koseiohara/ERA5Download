@@ -23,7 +23,7 @@ nt = calendar_delta.days * int(24/HOUR_DELTA) + int(calendar_delta.seconds/(3600
 
 calendar = INI_DT
 
-LOG_NAME    = 'log_' + PARAM + INI_DT.strftime('%Y%m%d') + '_' + FIN_DT.strftime('%Y%m%d') + '.txt'
+LOG_NAME    = 'log/log_' + PARAM + INI_DT.strftime('%Y%m%d') + '_' + FIN_DT.strftime('%Y%m%d') + '.txt'
 LOG_POINTER = open(LOG_NAME, mode='w')
 
 LOG_POINTER.write('----------\n')
